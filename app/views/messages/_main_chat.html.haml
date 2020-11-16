@@ -1,0 +1,29 @@
+デデデ
+.main_chat
+  .main_chat__group_info
+    .main_chat__group_info__left_contents
+      .group_name
+        = @group.name
+      .group_member
+        Member: 
+        - @group.users.each do |user|
+          = user.name
+    .main_chat__group_info__right_contents
+      %a.edit_btn
+      = link_to 'Edit', edit_group_path(@group), class: "editlink"
+        
+  .main_chat__message_list
+    .message_information
+      .user_name
+      .date
+    .messages
+      = render @messages
+
+  .main_chat__message_form
+    .new_message
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'inputbox', placeholder: 'Type a message'
+        = f.label :image, class: 'file' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'none'
+        = f.submit 'Send', class: 'submitbtn'
