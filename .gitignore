@@ -34,3 +34,4 @@
 public/uploads/*
 .keep
 config/secrets.yml
+log/development.log
