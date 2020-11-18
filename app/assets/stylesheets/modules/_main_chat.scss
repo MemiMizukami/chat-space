@@ -42,7 +42,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-right: 40px;
+        margin-right: 25px;
         .edit_btn{
           width: 72px;
           height: 40px;
@@ -66,13 +66,13 @@
       width: 100%;
       height: calc(100% - 190px);
       background-color: #fafafa;
-      padding: 13px 20px;
+      padding: 20px 40px 12px 40px;
       .message_information{
         width: 100%;
         height: 24px;
         display: flex;
+        margin-top: 20px;
         .user_name{
-          width: 100px;
           height: 100%;
           color: #333333;
           font-weight: bold;
@@ -84,26 +84,25 @@
           color: #999999;
           font-size: 12px;
           float: left;
+          margin-left: 15px;
         }
       }
-      .messages{
-        .message__content{
-          width: 100%;
-          font-size: 14px;
-          color: #434a54;
-          clear: left;
-          margin-top: 15px;
-        }
+      .message__content{
+        width: 100%;
+        font-size: 14px;
+        color: #434a54;
+        clear: left;
+        margin-top: 15px;
+        margin-bottom: 35px;
       }
+
     }
     &__message_form{
       width: 100%;
       height: 90px;
       background-color: #d2d2d2;
       display: flex;
-      // 横並び
       justify-content: space-around;
-      // 均等配置
       align-items: center;
       .new_message{
         width: 98%;
@@ -113,7 +112,6 @@
           width: 90%;
           height: 50px;
           position: relative;
-          // 今いる位置から
           background-color: white;
           border: none;
           padding-left: 10px;
@@ -121,7 +119,6 @@
         }
           .file{
             position: absolute;
-            // 親要素基準
             right: 160px;
             display: block;
             cursor: pointer;

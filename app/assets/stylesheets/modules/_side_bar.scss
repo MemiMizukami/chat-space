@@ -17,14 +17,14 @@
       display: flex;
       background-color: #253141;
       .top_items{
-        width: 300px;
+        width: 280px;
         height: 20px;
         margin: auto;
         display: flex;
         justify-content: space-between;
         color: white;
         &__name{
-          width: 300px;
+          width: 280px;
           height: 100%;
           line-height: 20px;
           font-size: 16px;
@@ -59,18 +59,18 @@
       background-color: #2f3e51;
       overflow: auto;
       .group{
-        width: 300px;
+        width: 280px;
         height: 91px;
         margin-left: 20px;
         &__name{
-          width: 300px;
+          width: 280px;
           height: 15px;
           position: absolute;
           font-size: 15px;
           margin-top: 20px;
         }
         &__message{
-          width: 300px;
+          width: 280px;
           height: 11px;
           position: absolute;
           font-size: 11px;

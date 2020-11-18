@@ -12,11 +12,7 @@
       = link_to 'Edit', edit_group_path(@group), class: "editlink"
         
   .main_chat__message_list
-    .message_information
-      .user_name
-      .date
-    .messages
-      = render @messages
+    = render @messages
 
   .main_chat__message_form
     .new_message
