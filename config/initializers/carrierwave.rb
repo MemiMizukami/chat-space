@@ -12,6 +12,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'superexactlyme'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/superexactlyme'
+  config.fog_directory  = 'memimemibucket'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/memimemibucket'
 end
